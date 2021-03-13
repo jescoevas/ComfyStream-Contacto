@@ -1,0 +1,27 @@
+<div class="jumbotron">
+    <h1 class="display-4 text-center mb-4">ComfyStream
+        <!-- &reg; -->
+    </h1>
+    <p class="lead">
+        ¡Bienvenido a ComfyStream!, la comunidad donde unificamos a diversos profesionales que imparten todo tipo de formación personalizada en directo: clases particulares, seminarios, etc., así como asistir a todo tipo de eventos o conferencias, e incluso solicitar
+        consultas personalizadas a doctores, profesores, abogados...
+    </p>
+</div>
+
+<!-- <h2>Nosotros</h2> -->
+
+<div class="jumbotron mb-1">
+    <h1 class="display-4 text-center">Nosotros
+    </h1>
+
+</div>
+
+<div class="miembro-list">
+    <div class="card miembro" *ngFor="let miembro of miembros">
+        <img class="card-img-top" src="assets/imgs/empresario.jpg" alt="Foto">
+        <div class="card-body">
+            <h6 class="card-title">{{miembro.nombre}}</h6>
+            <p class="card-text">{{miembro.rol}}</p>
+        </div>
+    </div>
+</div>
