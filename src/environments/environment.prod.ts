@@ -1,4 +1,5 @@
 export const environment = {
   production: true,
-  apiUrl:"http://localhost:3000/grupo5ispp/api"
+  //apiUrl:"http://localhost:3000/comfystream/api",
+  apiUrl:"https://comfystreamcontact-servidor.herokuapp.com/comfystream/api"
 };

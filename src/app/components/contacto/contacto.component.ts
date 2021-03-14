@@ -19,12 +19,17 @@ export class ContactoComponent {
   }
 
 async enviar(form:NgForm){
-  console.log(form)
   if(form.valid){
     const msg = await this.servicio.enviarCorreo(form.value)
     console.log(msg)
     if(msg == 'Exito'){
       this.toastr.success('Correo enviado');
+      this.datos = {
+        email:"",
+        asunto:"",
+        cuerpo:""
+      }
+      form.resetForm(this.datos)
     }else{
       this.toastr.error('Error al enviar el correo. Comprueba tu configuración SMTP')
     }
