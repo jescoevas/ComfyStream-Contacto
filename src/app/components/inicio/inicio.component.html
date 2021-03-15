@@ -20,7 +20,7 @@
     <div class="card miembro" *ngFor="let miembro of miembros">
         <img *ngIf="miembro.img" class="card-img-top" [src]="miembro.img" alt="Foto">
         <img *ngIf="!miembro.img" class="card-img-top" src="assets/imgs/empresario.jpg" alt="Foto">
-        <div class="card-body">
+        <div class="card-body bg-dark" style="color: white;">
             <h6 class="card-title">{{miembro.nombre}}</h6>
             <p class="card-text">{{miembro.rol}}</p>
         </div>

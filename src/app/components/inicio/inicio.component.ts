@@ -48,7 +48,7 @@ export class InicioComponent{
       id:7,
       nombre: "Pedro Manuel Cobos",
       rol:"Desarrollador front-end",
-      img:null
+      img:"assets/imgs/pedro.jpg"
     },
     {
       id:8,
