@@ -27,9 +27,18 @@ body {
     padding: 16px;
 }
 
-.miembro {
-    margin-bottom: 24px;
-    width: 32%;
+@media screen and (max-width: 4000px) {
+    .miembro {
+        margin-bottom: 24px;
+        width: 32%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .miembro {
+        margin-bottom: 24px;
+        width: 98%;
+    }
 }
 
 .jumbotron {

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
 import { ServicioService } from '../../services/servicio.service';
+import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-contacto',
@@ -19,10 +20,12 @@ export class ContactoComponent {
   }
 
 async enviar(form:NgForm){
+  console.log(form)
   if(form.valid){
+    Swal.showLoading()
     const msg = await this.servicio.enviarCorreo(form.value)
-    console.log(msg)
     if(msg == 'Exito'){
+      Swal.close()
       this.toastr.success('Correo enviado');
       this.datos = {
         email:"",
@@ -31,6 +34,7 @@ async enviar(form:NgForm){
       }
       form.resetForm(this.datos)
     }else{
+      Swal.close()
       this.toastr.error('Error al enviar el correo. Comprueba tu configuración SMTP')
     }
   }else{

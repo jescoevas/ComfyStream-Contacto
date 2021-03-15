@@ -17,26 +17,26 @@ export class InicioComponent{
     {
       id:2,
       nombre: "Jesús Coello",
-      rol:"Coordinador front-end",
+      rol:"Coordinador backend",
       img:"assets/imgs/jesus.jpeg"
     },
     {
       id:3,
       nombre: "Francisco José Rodríguez",
-      rol:"Coordinador back-end",
+      rol:"Coordinador frontend",
       img:"assets/imgs/fran.jpeg"
     },
     {
       id:4,
       nombre: "Álvaro Alcón",
       rol:"Desarrollador front-end",
-      img:null
+      img:"assets/imgs/alvaro.jpg"
     },
     {
       id:5,
       nombre: "Moisés Martín",
       rol:"Desarrollador front-end",
-      img:null
+      img:"assets/imgs/moises.jpg"
     },
     {
       id:6,
@@ -54,7 +54,7 @@ export class InicioComponent{
       id:8,
       nombre: "Pablo Leal",
       rol:"Desarrollador back-end",
-      img:null
+      img:"assets/imgs/pablo.jpeg"
     },
     {
       id:9,
@@ -66,7 +66,7 @@ export class InicioComponent{
       id:10,
       nombre: "Alejandro González",
       rol:"Desarrollador back-end",
-      img:null
+      img:"assets/imgs/alejandro.jpg"
     },
   ]
 

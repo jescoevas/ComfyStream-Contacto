@@ -4,8 +4,9 @@
 <form (ngSubmit)="enviar(form)" #form="ngForm">
     <div class="form-group">
         <label>Email</label>
-        <input type="text" class="form-control" name="email" #email="ngModel" [(ngModel)]="datos.email" required [class.is-invalid]="email.invalid && email.touched">
-        <small *ngIf="email.invalid && email.touched" class="form-text text-danger">Campo requerido</small>
+        <input type="text" class="form-control" name="email" #email="ngModel" [(ngModel)]="datos.email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" [class.is-invalid]="email.invalid && email.touched">
+        <small *ngIf="form.controls.email?.errors?.required && email.touched" class="form-text text-danger">Campo requerido</small>
+        <small *ngIf="form.controls.email?.errors?.pattern && email.touched" class="form-text text-danger">Email incorrecto</small>
     </div>
     <div class="form-group">
         <label>Asunto</label>
