@@ -1,25 +1,18 @@
 <div class="jumbotron">
-    <h1 class="display-4 text-center mb-4">ComfyStream
-        <!-- &reg; -->
-    </h1>
+    <h1 class="display-4 text-center mb-4">ComfyStream</h1>
     <p class="lead">
-        ¡Bienvenido a ComfyStream!, la comunidad donde unificamos a diversos profesionales que imparten todo tipo de formación personalizada en directo: clases particulares, seminarios, etc., así como asistir a todo tipo de eventos o conferencias, e incluso solicitar
-        consultas personalizadas a doctores, profesores, abogados...
+        ¡Bienvenido a ComfyStream!, la plataforma de conferencias online donde podrás compartir tus conocimientos y adquirir nuevos organizando o asistiendo a charlas de profesionales sobre temas tan diversos como economía, ciencia, educación, emprendimiento,
+        etc., además de poder solicitar consultas privadas a estos profesionales.
     </p>
 </div>
 
-<!-- <h2>Nosotros</h2> -->
-
 <div class="jumbotron mb-1">
-    <h1 class="display-4 text-center">Nosotros
-    </h1>
-
+    <h1 class="display-4 text-center">Nosotros</h1>
 </div>
 
 <div class="miembro-list">
     <div class="card miembro" *ngFor="let miembro of miembros">
-        <img *ngIf="miembro.img" class="card-img-top" [src]="miembro.img" alt="Foto">
-        <img *ngIf="!miembro.img" class="card-img-top" src="assets/imgs/empresario.jpg" alt="Foto">
+        <img class="card-img-top" [src]="miembro.img" alt="Foto">
         <div class="card-body bg-dark" style="color: white;">
             <h6 class="card-title">{{miembro.nombre}}</h6>
             <p class="card-text">{{miembro.rol}}</p>
