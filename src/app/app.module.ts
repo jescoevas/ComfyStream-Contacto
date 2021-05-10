@@ -12,6 +12,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { FormsModule } from '@angular/forms';
+import { LanzamientoComponent } from './components/lanzamiento/lanzamiento.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     FooterComponent,
     InicioComponent,
-    ContactoComponent
+    ContactoComponent,
+    LanzamientoComponent
    ],
   imports: [
     BrowserModule,
